@@ -1,4 +1,4 @@
-name: Build and deploy notes
+name: Notes build and deploy
 
 on:
   push:
@@ -19,16 +19,16 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.12"
-          cache: "pip"
-
+          python-version: '3.12'
+          cache: 'pip'
+      
       - name: Install dependencies
         run: |
           python -m venv mkdocs-venv
           source mkdocs-venv/bin/activate
           pip install --upgrade pip
           pip install -r requirements.txt
-
+      
       - name: Build MkDocs site
         run: |
           source mkdocs-venv/bin/activate
@@ -50,9 +50,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout code
+      - name: Checkout code
         uses: actions/checkout@v3
-
+      
       - name: Download artifacts
         uses: actions/download-artifact@v3
         with:
@@ -61,6 +61,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
-        with:
+        with: 
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
