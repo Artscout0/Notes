@@ -1,0 +1,41 @@
+site_name: Notes
+
+theme:
+  language: en
+  name: material
+  features:
+    - content.code.copy
+    - content.footnote.tooltips
+    - content.code.annotate
+  icon:
+    annotation: material/circle-medium
+
+markdown_extensions:
+  - footnotes
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  # Katex
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+  - js/katex.js
+  # Mermaid
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+plugins:
+  - search
+  - offline
+  - minify:
+      minify_html: true
