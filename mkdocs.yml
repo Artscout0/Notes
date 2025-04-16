@@ -14,14 +14,28 @@ markdown_extensions:
   - footnotes
   - attr_list
   - md_in_html
+
+  # Latex/Katex
+  - pymdownx.arithmatex:
+      generic: true
+  
+  # syntax highlighting
+  - pymdownx.highlight:
+      linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
+      auto_title: true
+
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+  # mermaidjs & hilighting p2
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-
-  - pymdownx.arithmatex:
-      generic: true
 
 extra_javascript:
   # Katex
