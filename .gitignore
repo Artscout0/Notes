@@ -3,3 +3,8 @@
 *.zip
 mkdocs-venv
 .obsidian
+[Ll]ib
+pyvenv.cfg
+share
+[Ss]cripts
+[Ii]nclude

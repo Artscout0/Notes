@@ -44,6 +44,9 @@ extra_javascript:
   - js/katex.js
   # Mermaid
   - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+  # canvasjs
+  - https://cdn.canvasjs.com/canvasjs.min.js
+  - js/canvasjs.js
 
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
