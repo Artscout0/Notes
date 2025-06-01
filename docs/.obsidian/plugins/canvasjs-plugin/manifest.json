@@ -1,0 +1,11 @@
+{
+	"id": "artscout-canvasjs",
+	"name": "Artscout's CanvasJS",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Allowes for the integration of CanvasJS plots in the documents",
+	"author": "Artscout",
+	"authorUrl": "https://github.com/Artscout0",
+	"fundingUrl": "",
+	"isDesktopOnly": false
+}

@@ -2,9 +2,15 @@
 [Bb]uild
 *.zip
 mkdocs-venv
-.obsidian
 [Ll]ib
 pyvenv.cfg
 share
 [Ss]cripts
 [Ii]nclude
+
+# this is a bit messy, but it is not my problem
+**/.obsidian/*
+
+!docs/.obsidian/
+!docs/.obsidian/plugins/
+!docs/.obsidian/plugins/canvasjs-plugin/

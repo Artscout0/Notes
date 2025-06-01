@@ -1,64 +1,63 @@
-// TODO: clean this up
-function replaceChartBlocks(node) {
-  const regex = /££([\s\S]*?)££/g;
+function renderCanvasJsCharts(root = document) {
+  const codeBlocks = root.querySelectorAll("pre.canvasjs code");
 
-  const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT, null);
-  const textNodes = [];
+  codeBlocks.forEach((codeBlock, index) => {
+    const rawJson = codeBlock.textContent.trim();
+    
+    let chartData;
 
-  while (walker.nextNode()) {
-    const currentNode = walker.currentNode;
-    if (regex.test(currentNode.textContent)) {
-      textNodes.push(currentNode);
+    try {
+      chartData = JSON.parse(rawJson);
+    } catch (e) {
+      console.warn("CanvasJS: Invalid JSON", rawJson);
+      return;
     }
-  }
 
-  textNodes.forEach((textNode, index) => {
-    const matches = [...textNode.textContent.matchAll(regex)];
+    const chartId = `canvasjs-chart-${Date.now()}-${index}`;
+    const chartDiv = document.createElement("div");
+    chartDiv.id = chartId;
+    chartDiv.style.width = "100%";
+    chartDiv.style.height = (chartData.height ?? 400) + "px";
 
-    matches.forEach((match, matchIndex) => {
-      const chartDataRaw = match[1];
-      let chartData;
-      try {
-        chartData = JSON.parse(chartDataRaw);
-      } catch (e) {
-        console.warn("Skipping invalid JSON chart data:", chartDataRaw);
-        return;
+    // Replace the outer container
+    const container = codeBlock.closest("pre.canvasjs");
+    if (container) {
+      container.replaceWith(chartDiv);
+    } else {
+      console.warn("CanvasJS: No .canvasjs container found");
+      return;
+    }
+
+    // Optional: inject user functions
+    if (chartData.inject && typeof chartData.inject === "object") {
+      for (const [name, fnBody] of Object.entries(chartData.inject)) {
+        try {
+          window[name] = new Function("event", fnBody);
+        } catch (e) {
+          console.warn(`CanvasJS: Failed to inject function '${name}'`, e);
+        }
       }
+    }
 
-      // Create chart container
-      const chartId = `canvasjs-chart-${index}-${matchIndex}`;
-      const chartDiv = document.createElement("div");
-      chartDiv.id = chartId;
-      chartDiv.style.height = "300px";
-      chartDiv.style.width = "100%";
+    
 
-      // Replace ££...££ with chart div
-      const beforeText = textNode.textContent.slice(0, match.index);
-      const afterText = textNode.textContent.slice(match.index + match[0].length);
-
-      const parent = textNode.parentNode;
-      if (beforeText) parent.insertBefore(document.createTextNode(beforeText), textNode);
-      parent.insertBefore(chartDiv, textNode);
-      if (afterText) parent.insertBefore(document.createTextNode(afterText), textNode);
-
-      parent.removeChild(textNode);
-
-      // Render the chart after insertion
-      setTimeout(() => {
-        new CanvasJS.Chart(chartId, {
-          animationEnabled: true,
-          theme: "light2",
-          title: { text: chartData.title || "Chart" },
-          data: [{
-            type: chartData.type || "column",
-            dataPoints: chartData.dataPoints || []
-          }]
-        }).render();
-      }, 0);
-    });
+    try {
+      const chart = new CanvasJS.Chart(chartId, {
+        animationEnabled: true,
+        zoomEnabled: true,
+        theme: chartData.theme || "light2",
+        ...chartData,
+      });
+      chart.render();
+    } catch (e) {
+      console.error("CanvasJS: Render failed", e);
+    }
   });
 }
 
-document$.subscribe(() => {
-  replaceChartBlocks(document.body);
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.CanvasJS) renderCanvasJsCharts();
+});
+document.addEventListener("pjax:complete", () => {
+  if (window.CanvasJS) renderCanvasJsCharts();
 });
