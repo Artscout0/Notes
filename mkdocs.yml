@@ -11,9 +11,14 @@ theme:
     annotation: material/circle-medium
 
 markdown_extensions:
+  - nl2br
   - footnotes
   - attr_list
   - md_in_html
+
+  # callouts
+  - admonition
+  - pymdownx.details
 
   # Latex/Katex
   - pymdownx.arithmatex:
@@ -58,6 +63,8 @@ extra_css:
 
 plugins:
   - search
+  - callouts
   - offline
   - minify:
       minify_html: true
+
