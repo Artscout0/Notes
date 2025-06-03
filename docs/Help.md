@@ -152,8 +152,16 @@ git push origin "branch name"
 
 That will create a new branch, with the data.
 
-If you later make any changes in the same files you edited here, before it got added to the official main version, re-run the last 3 commands.
+If the commit follows the [Angular Team Commit Specification](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines "https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines"), I would appreciate it.
+
+If you later make any changes in the same files you edited here, before it got added to the official main version, re-run the last 3 commands. This can be done even after the pull request was made.
 
 When you want to add it to that main version, you will then need to go to [github](https://github.com/Artscout0/Notes/compare) and create a pull request for the branch you just created.
+
+This will prompt you to write a description and what not. Write a description as detailed as you can besides just writing the actual code, about the changes you made. It uses the same basic format as MkDocs and Obsidian.
+
+I will then approve (or refuse) the request, and merge it (or not) with the main branch.
+
+This should about cover the basics. If there are any questions, I'm expecting them.
 
 [^1]: Obsidian is a neat platform, and it generally good for note taking, that's why I suggest it. Unfortunately, it's syntax differs a bit from mkdocs - material, which I am using for the website, but not enough for it to be too problematic most of the time
