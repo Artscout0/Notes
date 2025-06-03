@@ -68,3 +68,6 @@ plugins:
   - minify:
       minify_html: true
 
+not_in_nav: |
+  Help.md
+  test.md
