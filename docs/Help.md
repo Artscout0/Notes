@@ -33,7 +33,7 @@ You can also install Python, a programming language required for MkDocs to work 
 
 After that, you'll need to run another command:
 ```bash
-python3 -m venv notes-venv
+python3 -m venv mkdocs-venv
 ```
 
 Then things differ again for a bit depending on your OS:

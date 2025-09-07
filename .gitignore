@@ -1,7 +1,7 @@
 [Ss]ite
 [Bb]uild
 *.zip
-mkdocs-venv
+*-venv
 [Ll]ib
 pyvenv.cfg
 share

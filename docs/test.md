@@ -2,7 +2,7 @@
 
 How to use:
 Preferably only use in `mkdocs serve`.
-
+`sudo tee /etc/modprobe.d/iwlwifi-power.conf`
 ## Callouts
 > [!info] Test
 > This is a test callout
