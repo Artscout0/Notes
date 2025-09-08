@@ -1,5 +1,7 @@
 # Physics
 
-Physics are a non-theoretical use of math
+Physics are a way to describe the world, typically through math. 
 
-[Electromagnetism](./Electromagnetism/Electromagnetism.md)
+It's goal is comprehending natural phenomena, and explaining them, to create models that'll be able to predict them.
+
+This year, we'll mostly focus on Newtonian mechanics.
