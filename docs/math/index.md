@@ -1,3 +1,3 @@
 # Math
 
-Math is a complex subject with tons of quircks and what not.
+Math is a complex subject with tons of quirks and what not.
