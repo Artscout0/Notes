@@ -92,6 +92,9 @@ $$
 \frac{7}{3+\sqrt{2}}+\frac{2}{\sqrt{3}}
 \newline
 \newline
+\frac{7}{3+\sqrt{2}}*1+\frac{2}{\sqrt{3}}*1
+\newline
+\newline
 =\frac{7}{3+\sqrt{2}}*\frac{3+\sqrt{2}}{3+\sqrt{2}}+\frac{2}{\sqrt{3}}*\frac{\sqrt{3}}{\sqrt{3}}
 \newline
 \newline
