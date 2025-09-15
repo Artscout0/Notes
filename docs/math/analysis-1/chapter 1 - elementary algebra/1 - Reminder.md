@@ -106,3 +106,5 @@ $$
 $$
 
 This also works with cubes, but I don't want to deal with writing all of that.
+
+[[2 - Inequality on Reals|Next]]

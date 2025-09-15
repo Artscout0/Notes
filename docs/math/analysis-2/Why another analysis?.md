@@ -6,3 +6,7 @@ For example, we have a lot of trigonometry to do.
 > Trigonometry was initially invented for astronomy, but it has been proven useful for a variety of other tasks, most notably working with circles, and engineering.
 
 The main program is trigonometry, and then logarithmic and exponential functions.
+
+Table of contents:
+
+- [[1. Angles|A whole lot of trigonometry]]
