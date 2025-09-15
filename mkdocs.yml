@@ -72,6 +72,10 @@ plugins:
   - offline
   - minify:
       minify_html: true
+  - ezlinks:
+      warn_ambiguities: true
+      wikilinks: true
+      reference_links: true
 
 not_in_nav: |
   Help.md
