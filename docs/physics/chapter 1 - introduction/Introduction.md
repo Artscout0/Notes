@@ -98,3 +98,4 @@ This implies that newtons are $kg \cdot m / s^2$
 >Don't forget, we're trying to describe reality, so it should be based on our observations, intuition, and common sense.
 >We need to work with rigor: beware of incorrect notations (like with scalar vs vectors), justify what you do, and don't forget units. 
 
+[[1. Matter and space|Chapter 2: Movement in a plane]]
