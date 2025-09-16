@@ -80,7 +80,7 @@ $C_EA=\{x \in \mathbb{E}\mid x \le \frac{1}{3}\}$
 
 $A\bigcap B = \{\sqrt{2}\}=\{x \in \mathbb{R}\mid x\gt\frac{1}{3} \text{ and } x^2 = 2\}$
 
-$A\bigcup B=\{x\in\mathbb{R}\mid\\{\sqrt{2}\}=\{x \in \mathbb{R}\mid x\gt\frac{1}{3} \text{ or } x^2 = 2\}}=\{-\sqrt{2}\}\bigcup ]1/3;!\infty[$
+$A\bigcup B = \{x \in \mathbb{R}\mid x\gt\frac{1}{3} \text{ or } x^2 = 2\}=\{-\sqrt{2}\}\bigcup ]1/3;!\infty[$
 
 
 From these examples we learn the following:
@@ -116,3 +116,156 @@ $A = \{4,9\}$
 If we try to find B, which is A's complement:
 
 $B=C_EA=\{n\in E\mid\forall k \in \mathbb{N},n\ne k^2\}$
+
+
+### A small example
+
+We have a set A, which is a subset of E, defined by property P.
+
+We also have a set B, which is also a subset of E, defined by property Q.
+
+We also happen to know that B is the complement of A.
+
+
+Now, how do we prove that $B\bigcup A$ is $E$ ?
+
+Well, we can say the following:
+
+$C_E(A\bigcup B)=C_EA\bigcap C_EB$
+
+And as the complement of A is B, and complement of B is A...
+
+$C_E(A\bigcup B)=C_EA\bigcap C_EB = A\bigcap B$
+
+And as they are complements, $A\bigcap B = \emptyset$
+
+
+The thing to remember here is: $C_E(A\bigcup B)=C_EA\bigcap C_EB$.
+
+
+## Implication
+
+The implication symbol ($\implies$) is very useful.
+
+It's main job is saying that for a subset, if a condition is met, then another condition is also met.
+
+It works as follows:
+
+$\forall x \in E, \set{x \text{ fulfills } P} \implies \set{x \text{ fulfill } Q}$
+
+>[!warning]- Beware!
+>P isn't necessarily true, there can be x that doesn't fulfill P.
+
+So, how do we negate it?
+
+To negate it, we must say that there exists an element that verifies P, but doesn't verify Q.
+
+The negation would therefore be:
+
+$\exists x \in E, (x \text{ fulfills } P) \text{ and } (x \text{ fulfills not }Q)$
+
+
+We can say that what interests us is $A\bigcap \complement_E B$, if it's empty, then we can say that A's condition implies B's condition.
+
+If it's not, so we have something that fulfills A's condition, but not B's, then we have a counterexample. 
+
+### Some examples
+
+
+a) $\forall x \in \mathbb{R}, x>1 \implies x^2 > 1$
+
+Is we think about this as intervals:
+
+$A = ]1;+\infty[$
+
+$B = ]-\infty;-1[\bigcup]]1;+\infty[$
+
+As A is part of B (well, the same as in this case), this is correct / true.
+
+
+B) $\forall n \in \mathbb{N}, n \text{ even} \implies m^2 \text{ even}$
+
+Is also true, for much the same reason.
+
+C) $\forall x \in \mathbb{R}, x^2-5x+6=0 \implies x=2$
+
+This is not true, if we solve this, we get 
+S={2, 3}
+
+So, as 3 is a solution:
+
+$\exists x\in \mathbb{R}, x^2-5x+6=0\text{ and }x\ne 2$
+
+## Implication tips
+
+The reciprocal of an implication is where instead of $P \implies Q$, $Q \implies P$. There is no logical reason for it to be true, but it sometimes is.
+
+The contraposed is to $P\implies Q$,  $not Q \implies not P$ 
+
+The contraposed is equivalent to the causality.
+
+### Examples
+
+a) $\forall x \in \mathbb{R}, x^2>1\implies x > 1$
+
+$A = ]-\infty;-1[\bigcup]]1;+\infty[$
+
+$B = ]1;+\infty[$
+
+A is not fully included in B, and all of $]-\infty;-1[$ is a counterexample.
+
+b) $\forall n \in \mathbb{N}, n^2 \text{ is even}\implies n \text{ is even}$
+
+It's a bit difficult to prove.
+
+There are a couple of ways to do this:
+
+b.1) direct way
+
+Because of the square, it's a bit difficult to work with.
+
+We can theoretically do this by decomposing it into prime numbers, but it's easier to use the indirect method
+
+b.2) indirect way
+
+We can define, by using the contraposed:
+
+$\forall n \in \mathbb{N}, n \text{ not even} \implies n^2 \text{ not even}$
+
+b.3) method by the absurd
+
+Avoid this.
+
+$\exists n\in N, n \text{ is even and } n^2 \text{ not even}$
+
+Assume there is a counterexample.
+
+$n^2=2k$
+$n=2l+1$
+
+$n^2=4l^2+4l+1$
+
+These together imply
+$2k=4l^2+4l+1$
+$1=2k-4l^2-4l$
+
+$1=2(k-2l^2-2l)$
+which is absurd, as it'd imply 1 is even.
+
+## Equivalence
+
+If set A = set B
+
+$\forall x\in E, (x \text{ fulfills } P) \iff (x \text{ fulfills } Q)$
+
+This means that the implication also implies the original.
+
+Basically:
+
+$\forall x\in E, (x \text{ fulfills } P) \implies (x \text{ fulfills } Q)$
+and
+$\forall x\in E, (x \text{ fulfills } Q) \implies (x \text{ fulfills } P)$
+
+then $\forall x\in E, (x \text{ fulfills } P) \iff (x \text{ fulfills } Q)$
+
+This also means $A\subset B$ and $B\subset A$. 
