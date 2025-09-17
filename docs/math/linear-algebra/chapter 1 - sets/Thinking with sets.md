@@ -44,7 +44,7 @@ Anything $\bigcap\emptyset$ will always result in $\emptyset$.
 
 ## Finite and infinite sets
 
-There are two sets: finite and infinite ones.
+There are two set types: finite and infinite ones.
 
 Finite sets are quite nice, as they aren't very abstract. You can count the number of elements in the set, and use the set easily.
 
