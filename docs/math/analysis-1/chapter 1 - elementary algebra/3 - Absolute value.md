@@ -53,7 +53,7 @@ Step 1:
 $D_{def}=\mathbb{R}$
 
 Step 2:
-we apply $|f(x)|=g(x)\Leftrightarrow g(x) \ge 0 \text{ and } \begin{cases} g(x) \\\\ -g(x) \end{cases}$
+we apply $|f(x)|=g(x)\Leftrightarrow g(x) \ge 0 \text{ and } \begin{cases} g(x) \\ or \\ -g(x) \end{cases}$
 
 Because of this, we can say that $x+ 1\ge0 \Rightarrow x\ge -1$
 
