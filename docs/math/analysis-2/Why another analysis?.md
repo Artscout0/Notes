@@ -10,3 +10,17 @@ The main program is trigonometry, and then logarithmic and exponential functions
 Table of contents:
 
 - [[1. Angles|A whole lot of trigonometry]]
+
+
+## Some neat stuff
+
+### Trig
+
+Useful angles:
+
+|     | $\pi/2$ | $\pi/3$      | $\pi/4$      | $\pi/6$      | 0   |
+| --- | ------- | ------------ | ------------ | ------------ | --- |
+| sin | 1       | $\sqrt{3}/2$ | $\sqrt{2}/2$ | 1/2          | 0   |
+| cos | 0       | 1/2          | $\sqrt{2}/2$ | $\sqrt{3}/2$ | 1   |
+| tan | //      | $\sqrt{3}$   | 1            | $\sqrt{3}/3$ | 0   |
+| cot | 0       | $\sqrt{3}/3$ | 1            | $\sqrt{3}$   | //  |
