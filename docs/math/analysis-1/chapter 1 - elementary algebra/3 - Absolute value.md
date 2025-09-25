@@ -262,3 +262,6 @@ Step 4:
 
 S = $S_a\bigcup S_b$ = $]-2;0[\bigcup]1;+\infty[$
 
+
+
+[[2 - Inequality on Reals|Previous]]

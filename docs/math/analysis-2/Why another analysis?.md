@@ -16,7 +16,7 @@ Table of contents:
 
 ### Trig
 
-Useful angles:
+#### Useful angles
 
 |     | $\pi/2$ | $\pi/3$      | $\pi/4$      | $\pi/6$      | 0   |
 | --- | ------- | ------------ | ------------ | ------------ | --- |
@@ -24,3 +24,14 @@ Useful angles:
 | cos | 0       | 1/2          | $\sqrt{2}/2$ | $\sqrt{3}/2$ | 1   |
 | tan | //      | $\sqrt{3}$   | 1            | $\sqrt{3}/3$ | 0   |
 | cot | 0       | $\sqrt{3}/3$ | 1            | $\sqrt{3}$   | //  |
+
+#### Sum and difference identities
+
+$cos(A-B)=cos(A)\times cos(B) + sin(A)\times sin(B)$
+$cos(A+B)=cos(A)\times cos(B) - sin(A)\times sin(B)$
+$sin(A+B)=sin(A)\times cos(B) + cos(A)\times sin(B)$
+$sin(A-B)=sin(A)\times cos(B) - cos(A)\times sin(B)$
+
+$tan(A+B)=\cfrac{tan(A)+tan(B)}{1-tan(A)\times tan(B)}$
+
+$tan(A+B)=\cfrac{tan(A)-tan(B)}{1+tan(A)\times tan(B)}$
