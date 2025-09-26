@@ -67,7 +67,7 @@ For a smoother editing experience, [Obsidian](https://obsidian.md/) is recommend
 
 There are a number of differences between the markdown used in Obsidian and MkDocs, so I've used a number of dependencies in the requirements.txt file to make it work. I'm also predicting that we'll need to make and use charts, so I've set up a way to use CanvasJS in both.
 
-For an example on how to edit most documents and insert specific stuff in them, I provided [a test file](./test.md), that shows how to insert most things in the text.
+For an example on how to edit most documents and insert specific stuff in them, I provided [a test file](test.md), that shows how to insert most things in the text.
 
 ## Structure
 

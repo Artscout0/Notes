@@ -51,8 +51,8 @@ pie title NETFLIX
 
 Follows the documentation on [their website](https://mermaid.js.org/intro/)
 
-## KaTeX
-Katex is another markup language, which is a light and non-compiled version of another language called LaTeX. While LaTeX is a powerful tool to write documents and pages, this isn't the goal here, where we use KaTeX essentially just to write math stuff, such as the following:
+## MathJax
+MathJax is another markup language, which is a light and non-compiled version of another language called LaTeX. While LaTeX is a powerful tool to write documents and pages, this isn't the goal here, where we use MathJax essentially just to write math stuff, such as the following:
 
 $$
 \cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
@@ -67,7 +67,7 @@ $$
 > [!warning]+ Beware!
 > While in obsidian it's optional, for the MkDocs you'll need an extra line before and after the 2 dollar signs.
 
-You can also write inline KaTeX, such as $a^2+b^2=c^2$ using a single dollar sign.
+You can also write inline MathJax, such as $a^2+b^2=c^2$ using a single dollar sign.
 
 ## canvasjs
 
