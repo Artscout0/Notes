@@ -54,9 +54,13 @@ markdown_extensions:
 
 extra_javascript:
   # Katex
-  - https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js
-  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
-  - js/katex.js
+  # - https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js
+  # - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
+  # - js/katex.js
+  # MathJax
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - js/mathjax.js
   # canvasjs
   - https://cdn.canvasjs.com/canvasjs.min.js
   - js/canvasjs.js
@@ -64,7 +68,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
 
 extra_css:
-  - https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css
+  # - https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css
 
 plugins:
   - search

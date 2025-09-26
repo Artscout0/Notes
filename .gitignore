@@ -11,6 +11,4 @@ share
 # this is a bit messy, but it is not my problem
 **/.obsidian/*
 
-!docs/.obsidian/
-!docs/.obsidian/plugins/
 !docs/.obsidian/plugins/canvasjs-plugin/
