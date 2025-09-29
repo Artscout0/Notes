@@ -11,7 +11,7 @@ $\mathbb{Z}=\{...,-3,-2,-1,0,1,2,3,...\}$
 All numbers representable as a fraction
 $\mathbb{Q}=\{\frac{p}{q} | p \in \mathbb{Z},q \in \mathbb{Z*} \}$
 And finally, all real numbers, that have a development with an infinite and non-periodic length (as opposed to Q, which has either a finite, or a periodic development. Development being the decimal notation.)
-$\mathbb{R}=\{\text{It's a bit hard to define...}\}$
+$\mathbb{R}=\{\text{It's a bit hard to define... W'll do it later...}\}$
 
 In analysis, we'll mostly focus and work with Real numbers.
 

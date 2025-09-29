@@ -25,7 +25,7 @@ But do what you want, I can't exactly do anything about it.
 ## How this works
 
 This uses 2 things, python and markdown.
-Specifically, it uses the python library / tool mkdocs, that allows me to take markdown files and turn them into a website (well, kind of).
+Specifically, it uses the python library / tool mkdocs, that allows me to take markdown files and turn them into a website (well, kind of). To write down math formulas, this uses $\LaTeX$, specifically through the MathJax library.
 
 From there on, I use github to host all of that, and put it on the internet (hence why the .github.io in the url)
 

@@ -71,7 +71,7 @@ $$
 | Volumetric mass | $\rho$ | $\cfrac{kg}{m^3}$ | The amount of mass a specific volume will have, which is a characteristic of what the object is made of, it's materiel. |
 |                 |        |                   |                                                                                                                         |
 
-Sometimes we compare objects with some reference objects, the most common one being liquid water, typically at a specific temperature (typically 4$\degree$). 
+Sometimes we compare objects with some reference objects, the most common one being liquid water, typically at a specific temperature (typically 4$^{\circ}$). 
 This allows us to introduce the concept of density, which the d=$\cfrac{\rho_{object}}{\rho_{water}}$ , so the volumetric mass of the object compared to the volumetric mass of water. 
 As it's volumetric mass divided by volumetric mass, it doesn't have a unit.
 

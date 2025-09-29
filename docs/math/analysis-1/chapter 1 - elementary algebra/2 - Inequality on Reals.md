@@ -20,7 +20,9 @@ We write down the set of solutions: $S=\{values...\}$
 ## Example 1:
 
 Solve:
+
 $$5x+1 = \frac{1}{2}x-3$$
+
 Step 1: 
 $D_{def}=\mathbb{R}$
 
@@ -62,6 +64,7 @@ $S=\mathbb{R}$
 ## Example 3:
 
 $$\frac{x+2}{x+1}\le\frac{x-2}{x-1}$$
+
 Step 1:
 $D_{def}=\mathbb{R} \backslash \{-1, 1\}$
 

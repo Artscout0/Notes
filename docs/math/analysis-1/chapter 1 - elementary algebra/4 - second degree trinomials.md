@@ -185,3 +185,6 @@ So, we need $S_1\bigcap S_2\bigcap S_3 \bigcap S_4$
 
 $S = ]-10;-1[\bigcup[\frac{1}{5};+\infty[$
 
+[[3 - Absolute value|Previous]]
+[[5 - Powers and roots|Next]]
+
