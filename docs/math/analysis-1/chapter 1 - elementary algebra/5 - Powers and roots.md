@@ -20,7 +20,7 @@ This will have it's own properties:
 
 With some additional spicier properties:
 
-5) $\sqrt[n]{a}=\begin{cases}a if n even\\ |a| if n odd\end{cases}$
+5) $\sqrt[n]{a}=\begin{cases}a \text{ if n even}\\ |a| \text{ if n odd}\end{cases}$
 6) $a\gt0; \sqrt[m]{a^n}=a^{\frac{m}{n}}$
 7) $a\gt0;\frac{1}{\sqrt[m]{a^{n}}}=a^{-\frac{n}{m}}$ 
 
