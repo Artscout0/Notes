@@ -34,4 +34,4 @@ $sin(A-B)=sin(A)\times cos(B) - cos(A)\times sin(B)$
 
 $tan(A+B)=\cfrac{tan(A)+tan(B)}{1-tan(A)\times tan(B)}$
 
-$tan(A+B)=\cfrac{tan(A)-tan(B)}{1+tan(A)\times tan(B)}$
+$cot(A+B)=\cfrac{cot(B)cot(A)-1}{cot(B)+cot(A)}$
