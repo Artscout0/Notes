@@ -8,3 +8,4 @@ Basically we'll be putting lightning in rocks and making them think. Amazing.
 Table of contents:
 
 - [[1. Why python|Python Basics]]
+- [[1. What are data structures|Data structures]]
