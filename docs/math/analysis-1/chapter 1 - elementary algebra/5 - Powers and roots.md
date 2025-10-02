@@ -214,3 +214,4 @@ $S=S_{1}\bigcup S_{2}$
 $S=[-3;-1[\bigcup[-1;1]=[-3;1]$
 
 [[4 - second degree trinomials|Previous]]
+[[1 - introduction|Next chapter]]
