@@ -6,7 +6,7 @@ Then a couple of centuries later some European guys[^2] thought "oh that's actua
 
 ## So, what is a series?
 
-> "Math is like lego, you get tiny little bricks you want to combine into something better"
+> "Math is like Lego, you get tiny little bricks you want to combine into something better"
 > *- Prof. Samuel Dubuis*
 
 Well, a series is $a_{1}, a_{2}, a_{3}, a_{4},...$
