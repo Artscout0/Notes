@@ -22,6 +22,39 @@ But do what you want, I can't exactly do anything about it.
 - [[What is ICS|ICS]]
 - Chemistry will be added when relevant
 
+## Mildly useful tables
+
+Greek letters
+
+| Upper case | Lower case | Name    | Inline Code  |
+| ---------- | ---------- | ------- | ------------ |
+| A          | $\alpha$   | Alpha   | `$\alpha$`   |
+| B          | $\beta$    | Beta    | `$\beta$`    |
+| $\Gamma$   | $\gamma$   | Gamma   | `$\Gamma$`   |
+| $\Delta$   | $\delta$   | Delta   | `$\Delta$`   |
+| E          | $\epsilon$ | Epsilon | `$\Epsilon$` |
+| Z          | $\zeta$    | Zeta    | `$\Zeta$`    |
+| H          | $\eta$     | Eta     | `$\Eta$`     |
+| $\Theta$   | $\theta$   | Theta   | `$\Theta$`   |
+| I          | $\iota$    | Iota    | `$\Iota$`    |
+| K          | $\kappa$   | Kappa   | `$\Kappa$`   |
+| $\Lambda$  | $\lambda$  | Lambda  | `$\Lambda$`  |
+| M          | $\mu$      | Mu      | `$\Mu$`      |
+| N          | $\nu$      | Nu      | `$\Nu$`      |
+| $\Xi$      | $\xi$      | Xi      | `$\Xi$`      |
+| O          | $\omicron$ | Omicron | `$\Omicron$` |
+| $\Pi$      | $\pi$      | Pi      | `$\Pi$`      |
+| R          | $\rho$     | Rho     | `$\Rho$`     |
+| $\Sigma$   | $\sigma$   | Sigma   | `$\Sigma$`   |
+| T          | $\tau$     | Tau     | `$\Tau$`     |
+| $\Upsilon$ | $\upsilon$ | Upsilon | `$\Upsilon$` |
+| $\Phi$     | $\phi$     | Phi     | `$\Phi$`     |
+| X          | $\chi$     | Chi     | `$\Chi$`     |
+| $\Psi$     | $\psi$     | Psi     | `$\Psi$`     |
+| $\Omega$   | $\omega$   | Omega   | `$\Omega$`   |
+
+(the capitals that look like Latin ones are the Latin ones. It's stupid.)
+
 ## How this works
 
 This uses 2 things, python and markdown.

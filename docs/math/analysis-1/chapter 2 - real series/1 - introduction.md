@@ -231,7 +231,7 @@ This can be turned into
 
 $$\frac{(n+1)(n+2)}{2}$$
 
-which is (n+1)(n+1+1), which is what it should be for the next number, proving it correct.
+Which is (n+1)(n+1+1), which is what it should be for the next number, proving it correct.
 
 [[5 - Powers and roots|Previous chapter]]
 
