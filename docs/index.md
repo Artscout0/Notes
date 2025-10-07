@@ -63,8 +63,3 @@ Specifically, it uses the python library / tool mkdocs, that allows me to take m
 From there on, I use github to host all of that, and put it on the internet (hence why the .github.io in the url)
 
 To take the notes I used Obsidian.
-
-## TODO
-
-- [x] Add something to the CI/CD pipeline that'll translate potential Obsidian md into mkdocs md
-- [ ] Automatic translations to french (and other languages as necessary) using some API
