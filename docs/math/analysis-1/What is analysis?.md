@@ -5,4 +5,5 @@ If you want a better explanation, it's basically the study of functions.
 Table of contents:
 
 - [[1 - Reminder|Elementary Algebra]]
+- [[1 - introduction|Real series]]
 
