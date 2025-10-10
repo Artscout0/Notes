@@ -68,7 +68,7 @@ Truly, topologists are mythical beasts. Or Prof. Dubuis is trying his best to co
 
 AAANYHOW, here are some examples:
 
-### Example 1:
+### Example 1
 
 We need to verify that $\lim\limits_{n\to\infty} \frac{1}{n}=0$.
 
@@ -128,6 +128,151 @@ Unfortunately, at any given range, it can be either 1 or -1. And the further we 
 This allows us to say it doesn't have a limit, as for any given epsilon, if it's smaller than 2, it doesn't work.
 
 This also allows us to find another rule of limits: there can only be one in a series.
+
+
+### Some fun properties to conclude
+
+> If you try to go to Geneva, I know it's a weird idea....
+
+1. If a series is convergent, it's imperatively bordered. The opposite isn't always true, as we have stuff like $(a_{n})=-1,1,-1,1,-1,1,-1,1,\dots$
+2. If it's increasing and majored, it converges
+3. If it's decreasing and minored, it converges
+
+
+## Limits, from a calculation perspective
+
+> "Series are like long lasting Netflix series, they worsen over time but never quite reach 'bad'"
+> Prof. Dubuis
+
+
+Say we have series $(a_{n})$ and $(b_{n})$, both of which converge, so that there are $a,b\in\mathbb{R}$, so that $\lim\limits_{n\to\infty}a_{n}=a$ and $\lim\limits_{n\to\infty}b_{n}=b$
+
+
+This is going to have some properties:
+
+1. $\lim\limits_{n\to\infty}|a_{n}|=|\lim\limits_{n\to\infty}a_{n}|=|a|$
+2.  $\lim\limits_{n\to\infty}\sqrt{a_{n}}=\sqrt{\lim\limits_{n\to\infty}a_{n}}=\sqrt{a}$
+3. $\lim\limits_{n\to\infty}(a_{n}\pm b_{n})=\lim\limits_{n\to\infty}a_{n}\pm\lim\limits_{n\to\infty}b_{n}=a\pm b$
+4. $\lim\limits_{n\to\infty}(a_{n}\cdot b_{n})=\lim\limits_{n\to\infty}a_{n}\cdot\lim\limits_{n\to\infty}b_{n}=a\cdot b$
+5. $\lim\limits_{n\to\infty}( \frac{a_{n}}{ b_{n}})= \frac{\lim\limits_{n\to\infty}a_{n}}{\lim\limits_{n\to\infty}b_{n}}= \frac{a}{b}, \text{ where } b_{n}\ne0, b\ne0$
+
+
+### Example 1
+
+calculate $\lim\limits_{n\to\infty}(\frac{2n+1}{n})^{2}$
+
+$$
+\begin{align}
+\lim\limits_{n\to\infty}(\frac{2n+1}{n})^{2} = \lim\limits_{n\to\infty} \frac{4n^{2}+4n+1}{n^{2}}=\lim\limits_{n\to\infty}4+ \frac{4}{n}+ \frac{1}{n^{2}}\\
+=\lim\limits_{n\to\infty}4+\lim\limits_{n\to\infty} \frac{4}{n} + \lim\limits_{n\to\infty} \frac{1}{n^{2}}
+= 4 + \lim\limits_{n\to\infty}4 \cdot \lim\limits_{n\to\infty} \frac{1}{n} + \lim\limits_{n\to\infty} \frac{1}{n} \cdot \lim\limits_{n\to\infty} \\
+=4 + 4 \cdot 0 + 0 \cdot 0 = 4
+\end{align}
+$$
+
+
+### Example 2
+
+calculate $\lim\limits_{n\to\infty} \frac{n^{2}+1}{(n+1)(2n-1)}$
+
+$$
+\begin{align}
+\lim\limits_{n\to\infty} \frac{n^{2}+1}{(n+1)(2n-1)} = \lim\limits_{n\to\infty} \frac{n^{2}+1}{2n^{2}+n-1}=\lim\limits_{n\to\infty} \frac{n^{2}(1+ \frac{1}{n^{2}})}{n^{2}(2+ \frac{1}{n}- \frac{1}{n^{2}})}\\
+= \lim\limits_{n\to\infty} \frac{1+\frac{1}{n^{2}}} {2+ \frac{1}{n}- \frac{1}{n^{2}}}
+= \frac{\lim\limits_{n\to\infty} 1 + 1/n^{2}}{\lim\limits_{n\to\infty}2+0-0}=\frac{1}{2}
+\end{align}
+$$
+
+
+### Example 3
+
+calculate $\lim\limits_{n\to\infty} \frac{\sqrt{n^{2}+1}}{n^{2}}$
+
+$$
+\begin{align}
+\lim\limits_{n\to\infty} \frac{\sqrt{n^{2}+n}}{n^{2}}=\lim\limits_{n\to\infty} \frac{\sqrt{n^{2}(1+ \frac{1}{n})}}{n^{2}}=\lim_{n\to\infty}
+\end{align}
+$$
+
+... = 0
+
+
+### Some additional calculation rules
+
+#### Theorem of comparisons
+
+> It's like if me and a friend were going to Geneva, which YOU SHOULDN'T DO...
+
+if $\exists N_{0}\in\mathbb{N}^{*}$ so that $a_{n}\le b_{n} \forall n \ge N_{0}$
+
+therefore $\lim\limits_{n\to\infty} a_{n}=a \le b = \lim\limits_{n\to\infty} b_{n}$
+
+#### Theorem of the 2 policemen (also the squeeze theorem)
+
+Assume $(g_{n})$, $(d_{n})$, and $(a_{n})$ has series so that 
+
+$\exists N_{0}\in\mathbb{N}^{*}$ so that $g_{n}\le a_{n} \le d_{n},  \forall n \ge N_{0}$
+
+If there exists $L\in \mathbb{R}$ so that $\lim\limits_{n\to\infty} g_{n}=\lim\limits_{n\to\infty}d_{n}=L$
+
+Then $\lim\limits_{n\to\infty}a_{n}=L$
+
+
+Proof:
+
+To prove this, we need to show that $\lim\limits_{n\to\infty}a_{n}=L$.
+
+To do that, we need to show there exists $N(\epsilon)\in\mathbb{N}^{*}$ so that $n \ge N(\epsilon)\implies |a_{n}-L|<\epsilon\iff L-\epsilon\lt a_{n}\lt L+\epsilon$
+
+We know $\forall n \ge N_{0}$, we have $g_{n}\le a_{n}\le d_{n}$
+
+And also because $\epsilon\gt0$ we have $\lim\limits_{n\to\infty}g_n=L$ that $\exists N_{g}(\epsilon)$ so that $|g_{n}-L|\lt\epsilon\iff L-\epsilon\lt g_{n}\lt L+\epsilon$
+
+Same applies for $d_{n}$
+
+
+So, we say $\forall n \ge N(\epsilon)$ we have:
+
+$L-\epsilon\lt g_{n}\le a_{n}\le d_{n}\lt L+\epsilon$
+
+so we have $\forall n \ge N(\epsilon), L-\epsilon\lt a_{n}\lt L+\epsilon\implies |a_{n}-L|\lt\epsilon$.
+
+QED.
+
+### Example 1
+
+solve $a_{n}= \frac{n+2}{n+sin(\frac{n\pi}{2})}$
+
+We can observe that $\forall n\in\mathbb{N}^{*}\ge \frac{n+2}{n+1}$
+
+And that $\forall n \in \mathbb{N}^{*} \lt \frac{n+2}{n-1}$
+
+And that $\lim\limits_{n\to\infty} \frac{n+2}{n+1}= \lim\limits_{n\to\infty} \frac{n(1+\frac{1}{n})}{n(1+\frac{1}{n})} = 1$
+
+As well as $\lim\limits_{n\to\infty} \frac{n+2}{n-1}=1$
+
+We can use the 2 policemen, don't take this out of context, with $N_{0}=2, g_{n}=\frac{n+2}{n+1}, d_{n}=\frac{n+2}{n-1}$.
+
+Therefore $\lim\limits_{n\to\infty} a_{n}=1$
+
+### Example 2
+
+calculate $\lim\limits_{n\to\infty} \frac{\sqrt{n^{2}+n}}{n^{2}}$
+
+$\forall n\ge1, \frac{\sqrt{n^{2}+n}}{n^2}\ge0$
+as well as $\frac{\sqrt{n^{2}+n}}{n^{2}}\le \frac{\sqrt{n^{2}}+\sqrt{n}}{n^{2}}=\frac{1}{n} + \frac{1}{\sqrt{n}}, \forall n \ge 1$
+and $\forall n \ge 1, 0\le \frac{\sqrt{n^{2}+n}}{n}\le \frac{1}{n}+ \frac{1}{\sqrt{n}}$
+Using the 2 policemen, with $N_{0}=1, g_{n}=0, d_{n}=\frac{1}{n}+ \frac{1}{\sqrt{n}}$, we find that $\lim\limits_{n\to\infty}\frac{\sqrt{n^{2}+n}}{n}=0$
+
+### A corollary to the 2 policemen
+
+If $(a_{n})$ is a series s that $\lim\limits_{n\to\infty}|a_{n}|=0$
+
+Then $\lim\limits_{n\to\infty}a_{n}=0$
+
+The proof being that by definition, $-|a_{n}|\le a_{n} \le +|a_{n}|$, which means according to the two policemen that $\lim\limits_{n\to\infty}a_{n}=0$.
+
+[[1 - introduction|Previous]]
 
 
 [^1]:I'm lost
