@@ -234,6 +234,7 @@ $$\frac{(n+1)(n+2)}{2}$$
 Which is (n+1)(n+1+1), which is what it should be for the next number, proving it correct.
 
 [[5 - Powers and roots|Previous chapter]]
+[[2 - limits|Next]]
 
 
 [^1]:Some Greek hero guy
