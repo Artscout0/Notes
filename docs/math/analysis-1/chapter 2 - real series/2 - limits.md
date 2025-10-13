@@ -272,7 +272,150 @@ Then $\lim\limits_{n\to\infty}a_{n}=0$
 
 The proof being that by definition, $-|a_{n}|\le a_{n} \le +|a_{n}|$, which means according to the two policemen that $\lim\limits_{n\to\infty}a_{n}=0$.
 
-[[1 - introduction|Previous]]
+## Divergent series
 
+> Not the book series, nor the film(s?) made about it.
+
+When a series doesn't converge, we say it diverges.
+
+Imagine 3 series:
+
+$a_{n}=1,0,1,0,\dots$
+$b_{n}=1,0,2,0,3,0,4,0,5,...$
+$c_{n}=2,4,8,16,32,64,256,2048$
+
+We say that a series ($a_{n}$) diverges to $+\infty$, written $\lim\limits_{n\to\infty}=+\infty$ if and only if $\forall A>0, \exists N(A)\in\mathbb{N}$ so that $n\ge N(A)\implies a_{n}\ge A$.
+
+In other terms, the series does what is wants, but after some term, it's always larger than any given value A. We call this greater than A the A-neighborhood. 
+
+If every A-neighborhood of $+\infty$ contains all terms of the series, except a finite number.
+
+We can also say that a series ($b_{n}$) that diverge to $-\infty$, written $\lim\limits_{n\to\infty}=-\infty$, if and only if $\forall B<0, \exists N(B)\in\mathbb{N}$ so that $n\le N(A)\implies a_{n}\le A$
+
+We get from this B neighborhoods, and this allows us to define the same thing as before, that if, if B-neighborhoods contain everything except a finite number of elements it's divergent to minus infinity. 
+
+### Example
+
+Check that $\lim\limits_{n\to\infty}[2n-n^2]=-\infty$
+
+Say that B < 0, fixed, we must show that $n\ge N(B)$ then $2n-n^{2}\lt B$
+
+We solve $2n-n^{2}\lt B$
+
+$$
+\begin{align}
+\iff 0\lt n^{2}-2n+B\\
+&\Delta=4-4B\gt0\\
+& n_{1,2}=\frac{2\pm\sqrt{\Delta}}{2}=\frac{2\pm\sqrt{4-4B}}{2}
+=1\pm\sqrt{1-B}\\
+\iff n\in ]-\infty;1-\sqrt{1-B}[ \bigcup]1+\sqrt{1-B};+\infty[
+\end{align}
+$$
+
+This means it works.
+
+### Additional rules
+
+Say there exists $(a_{n})$ and $(b_{n})$, 2 series:
+
+1. If $\lim\limits_{n\to\infty} a_{n}=+\infty$ and if 
+	1. $\lim\limits_{n\to\infty}b_{n}=+\infty$ Or
+	2. $\lim\limits_{n\to\infty}b_{n}\in\mathbb{R}$ Or
+	3. $b_{n}$ is bordered
+	Then $a_n+b_n=+\infty$
+2. If $\lim\limits_{n\to\infty}a_{n}=+\infty$ and $\lambda\gt0$, then $\lim\limits_{n\to\infty}\lambda A_{n}=+\infty$
+3. If $\lim\limits_{n\to\infty}a_{n}=-\infty$ and $\lambda\gt0$, then $\lim\limits_{n\to\infty}\lambda A_{n}=-\infty$
+4. If $\lim\limits_{n\to\infty}a_{n}=+\infty$ and $\lambda\lt0$, then $\lim\limits_{n\to\infty}\lambda A_{n}=-\infty$
+5. If $\lim\limits_{n\to\infty}a_{n}=-\infty$ and $\lambda\lt0$, then $\lim\limits_{n\to\infty}\lambda A_{n}=+\infty$
+6. If $\lim\limits_{n\to\infty}a_{n}=+\infty$ and if
+	1. $\lim\limits_{n\to\infty}b_{n}=b>0$ or
+	2. $\lim\limits_{n\to\infty}b_{n}=+\infty$ or
+	3. $\exists N_{0}\in\mathbb{N}^{*}$ and $m\gt0$ so that $\forall n\gt N_{0}$ we have $b_{n}\ge m$
+		then $\lim\limits_{n\to\infty}a_{n}\cdot b_{n}=+\infty$
+7. If $\lim\limits_{n\to\infty}a_{n}=\pm\infty$, $|\lim\limits_{n\to\infty}a_{n}|=+\infty$
+8. If $a_{n}\ge0$ and $\lim\limits_{n\to\infty}a_{n}=+\infty$ then $\lim\limits_{n\to\infty}\sqrt{a_{n}}=+\infty$
+9. If $a_{n}\ne0\ \forall n\in\mathbb{N}^{*}$ and if $\lim\limits_{n\to\infty}=\pm\infty$ then $\lim\limits_{n\to\infty} \frac{1}{a_{n}}=0$
+10. If exists $N_{0}\in\mathbb{N}^{*}$ so that $a_{n}\le b_{n}$ and $\lim\limits_{n\to\infty}a_{n}=+\infty$, then $\lim\limits_{n\to\infty}b_{n}=+\infty$
+11. If exists $N_{0}\in\mathbb{N}^{*}$ so that $a_{n}\le b_{n}$ and $\lim\limits_{n\to\infty}a_{n}=-\infty$, then $\lim\limits_{n\to\infty}b_{n}=-\infty$
+
+Now, there are some cases where this breaks down, particularly when it's related to 0.
+
+We have 4 cases where we can't determine an answer:
+
+1. $\lim\limits_{n\to\infty}a_{n}=\pm\infty$ and $\lim\limits_{n\to\infty}b_{n}=0$, we don't know $\lim\limits_{n\to\infty}a_{n\cdot}b_{n}$
+2. $\lim\limits_{n\to\infty}a_{n}=+\infty$ and $\lim\limits_{n\to\infty}b_{n}=-\infty$, we don't know $\lim\limits_{n\to\infty}a_{n}+b_{n}$
+3. $\lim\limits_{n\to\infty}=\pm\infty$ and $\lim\limits_{n\to\infty}b_{n}=\pm\infty$, we don't know $\lim\limits_{n\to\infty}\frac{a_{n}}{b_{n}}$
+4. $\lim\limits_{n\to\infty}a_{n}=\lim\limits_{n\to\infty}b_{n}=0$, we don't know $\lim\limits_{n\to\infty}\frac{a_{n}}{n_{n}}$
+
+### Example 1
+
+Find $\lim\limits_{n\to\infty}a_{n}$ with $a_{n}=\sqrt{n^{2}+n}-\sqrt{2n^{2}+1}$
+
+We're in the case of $\infty-\infty$, which we don't know.
+
+Here, we'll try removing the greatest power.
+
+$$
+\begin{align}
+\lim\limits_{n\to\infty}\sqrt{n^{2}+n}-\sqrt{2n^{2}+1}=\lim\limits_{n\to\infty}[n\sqrt{1+ \frac{1}{n}}-n(\sqrt{2+ \frac{1}{n^{2}}})]=\\
+\lim\limits_{n\to\infty}n[\sqrt{1+ \frac{1}{n}}-\sqrt{2+ \frac{1}{n^{2}}}]=+\infty\cdot(\sqrt{1}-\sqrt{2})=-\infty
+\end{align}
+$$
+
+### Example 2
+
+find $\lim\limits_{n\to\infty}b_{n}=\sqrt{n^{2}-n}-n$
+
+Let's try the previous method
+
+$$
+\begin{align}
+\lim\limits_{n\to\infty}\sqrt{n^2-n}-n=\lim\limits_{n\to\infty}[n\sqrt{1 - \frac{1}{n}}-n ]=\\
+\lim\limits_{n\to\infty}n[\sqrt{1- \frac{1}{n}}-1]=+\infty(1-1)=+\infty\cdot 0
+\end{align}
+$$
+This isn't solvable, so we do it again in a different way, using conjugation:
+
+$$
+\begin{align}
+\lim\limits_{n\to\infty}\sqrt{n^{2}-n}-n=\lim\limits_{n\to\infty}[\sqrt{n^{2}-n}-n]\cdot\frac{\sqrt{n^{2}-n}+n}{\sqrt{n^{2}-n}+n}=\\
+\lim\limits_{n\to\infty}\frac{n^{2}-n-n^{2}}{\sqrt{n^{2}-n}+n}=\lim\limits_{n\to\infty} \frac{-n}{n(\sqrt{1-\frac{1}{n}+1})}=\frac{1}{2}
+\end{align}
+$$
+
+### Example 3
+
+find $\lim\limits_{n\to\infty}\sqrt{n^{3}+1}-\sqrt{n^{3}+n^{2}+1}$
+
+Learning of our mistakes, let's conjugate it immediately.
+
+$$
+\begin{align}
+\lim\limits_{n\to\infty}\sqrt{n^{3}+1}-\sqrt{n^{2}+n+1}=\lim\limits_{n\to\infty}\sqrt{n^{3}+1}-\sqrt{n^{2}+n^{2}+1}\cdot\frac{\sqrt{n^{3}+1}+\sqrt{n^{3}+n^2+1}}{\sqrt{n^{3}+1}+\sqrt{n^{3}+n^2+1}}=\\
+\lim\limits_{n\to\infty} \frac{n^{3}+1-(n^{3}+n^{2}+1)}{\sqrt{n^{3}+1}+\sqrt{n^{3}+n^2+1}}=\lim\limits_{n\to\infty}\frac{-n^{2}}{\sqrt{n^{3}}[\sqrt{1+ \frac{1}{n}}+\sqrt{1+ \frac{1}{n}+ 1/n^{3}}]}=\\
+\lim\limits_{n\to\infty} \frac{-\sqrt{n}}{\sqrt{1+ \frac{1}{n^{3}}}+\sqrt{1+ \frac{1}{n}+ \frac{1}{n^{3}}}}=\frac{-\infty}{2}=-\infty
+\end{align}
+$$
+
+
+### Example 4
+
+> Po-Tay-Toes, boil 'em, mash 'em, stick 'em in a stew!
+> *- Samwise Gamgee*
+
+> It's like filling a bag with progressively smaller potatoes
+> *- Prof. Dubuis*
+
+Goal: solve $\lim\limits_{n\to\infty}1+ \frac{1}{\sqrt{2}}+ \frac{1}{\sqrt{3}}+\dots+ \frac{1}{\sqrt{n}}$
+
+Idea: find $b_{n}$ so that $\forall n \in \mathbb{N}^{*} b_{n}\le a_{n}$ 
+
+We have a sum of n elements that are all strictly positive, also, $\forall k=1,2,3,4,\dots,n$ we have $a_{n}\gt \frac{1}{\sqrt{n}}$.
+
+This means that  $a_{n}\ge n\cdot \frac{1}{\sqrt{n}}=\sqrt{n}$
+Luckily, we have $\lim\limits_{n\to\infty}\sqrt{n}=+\infty$, which means $\lim\limits_{n\to\infty}a_{n}=+\infty$.
+
+
+[[1 - introduction|Previous]]
 
 [^1]:I'm lost
