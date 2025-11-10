@@ -415,7 +415,7 @@ We have a sum of n elements that are all strictly positive, also, $\forall k=1,2
 This means that  $a_{n}\ge n\cdot \frac{1}{\sqrt{n}}=\sqrt{n}$
 Luckily, we have $\lim\limits_{n\to\infty}\sqrt{n}=+\infty$, which means $\lim\limits_{n\to\infty}a_{n}=+\infty$.
 
-
 [[1 - introduction|Previous]]
+[[3 - geometric series|Next]]
 
 [^1]:I'm lost

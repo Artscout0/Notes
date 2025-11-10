@@ -137,3 +137,6 @@ $\pi R^{2} \frac{1-(\frac{-4}{9})^{n}}{1-(\frac{-4}{9})}=\frac{9}{13}*\pi*R^{2}(
 As for q2:
 
 $\lim\limits_{n\to\infty}\frac{9}{13}*\pi*R^{2}(1-(\frac{-4}{9})^{n})=\frac{9}{13}\pi R^{2}$
+
+[[2 - limits|Previous]]
+[[1 - reminders and definitions|Next Chapter]]
