@@ -9,3 +9,4 @@ Table of contents:
 
 - [[1. Why python|Python Basics]]
 - [[1. What are data structures|Data structures]]
+- [[1. Introduction to algorithms|Algorithms]]
