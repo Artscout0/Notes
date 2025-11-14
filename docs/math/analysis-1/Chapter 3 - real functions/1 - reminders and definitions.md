@@ -410,4 +410,4 @@ On $]-\infty;+\infty[$, it's neither majored nor minored.
 
 
 [[3 - geometric series|Previous Chapter]]
-
+[[2 - function limits|Next]]
