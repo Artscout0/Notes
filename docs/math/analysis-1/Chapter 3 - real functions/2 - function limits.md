@@ -18,8 +18,10 @@ we say a function is defined in the neighborhood of $-\infty$ if there exists $M
 so that $]-\infty;M[\subset D_{def}$.
 
 An example is $f(x)=\frac{1}{x}$, which is in the neighborhood of $\pm\infty$.
+
 ```canvasjs
 ```
+
 Another is $f(x)=\tan(x)$,  which is in neither neighborhoods.
 
 ```canvasjs
@@ -127,9 +129,148 @@ $$
 \begin{matrix}  1) +\infty-\infty && 3) \frac{\infty}{\infty} \\ 2) 0\times\infty && 4) \frac{0}{0} \end{matrix}
 $$
 
+## Examples
+
+### Example 1
+
+Find $\lim\limits_{x\to-\infty}\sqrt{x^{2}+x}+x-1$
+
+Let's proceed like with series limits:
+
+$$
+\begin{equation}
+\begin{split}
+\lim_{x\to-\infty}\sqrt{x^{2+x}}+x-1=\frac{\sqrt{x^{2}+x}+x-1}{\sqrt{x^{2}+x}+x-1}*\sqrt{x^{2}+x}+x-1=\lim_{x\to-\infty}=\frac{x^{2}+x-(x-1)^{2}}{\sqrt{x^{2}+x}-(x-1)}\\
+\lim_{x\to-\infty} \frac{3x-1}{\sqrt{x^{2}+x}-(x-1)}=\lim_{x\to-\infty} \frac{3x-1}{\sqrt{x^{2}(1+ \frac{1}{x})}-(x-1)}=\lim_{x\to-\infty} \frac{3x-1}{|x|\sqrt{\frac{1+1}{x}}-x+1}\\
+\lim_{x\to-\infty} \frac{3x-1}{-x(\sqrt{1+ \frac{1}{x}})-x+1}=\lim_{x\to-\infty} \frac{x(3-\frac{1}{x})}{x(-\sqrt{1+ \frac{1}{x}})-1+ \frac{1}{x}}\\
+=\lim_{x\to-\infty} \frac{3-\frac{1}{x}}{-\sqrt{1+ \frac{1}{x}}-1+ \frac{1}{x}}= \frac{3}{-2}
+\end{split}
+\end{equation}
+$$
+
+(we know |x| is -x here because the limit is going to -infinity)
+
+### Example 2
+
+say there's $f(x)=\frac{p(x}{q(x)}$ with p(x) being $a_{n}x^{n}+a_{n-1}+x^{n-1}+\dots+a_{0},n\in\mathbb{N},a_{n}\ne0$
+and q(x) being $b_{m}x^{m}+b_{m-1}+x^{m-1}+\dots+b_{0},n\in\mathbb{N},b_{n}\ne0$
+
+
+If we write that down, we can fairly easily find that it's in reality:
+
+$$
+\lim_{x\to\pm\infty} \frac{x^{n}(a_{n}+a_{n-1} \frac{1}{x}+\dots+ \frac{a_{0}}{x^{n}})}{x^{m}(b_{n}+\dots+ \frac{b_{0}}{x^{m}})}=\lim_{x\to\infty} \frac{x^{n}*a_{n}}{x^{m}*b_{0}}=\begin{cases}n\gt0\implies\infty\\n=m\implies \frac{a_{n}}{b_{m}}\\ n\lt m\implies0\end{cases}
+$$
+
+
+## Couple additional rules
+
+### 1. The two gendarmes
+
+say there are f,g and d, 3 functions with a neighborhood of + infinity, 
+
+If there exists M>0 so that $\forall x>M$ e have $g(x) \le f(x) \le d(x)$
+If $\lim\limits_{x\to\infty} g(x)=\lim\limits_{x\to\infty} d(x)=L\in\mathbb{R}$
+
+Then we have $\lim\limits_{x\to\infty} f(x)=L$
+
+#### Example
+
+Find $\lim\limits_{x\to\infty} \frac{x}{(E(\sqrt{x}))^{2}}$
+
+Obviously because that's it's example, but also because this is probably the best way to not have to deal with E, we can use the two gendarmes.
+
+We can also fairly simply find the following:
+
+$\forall y\in\mathbb{R}, y-1\le E(y)\le y$
+$\implies \forall x\ge0, \sqrt{x}-1\le E(\sqrt{x})\le \sqrt{x}$
+$\implies \forall x\ge0, (\sqrt{x}-1)^{1}\le (E(\sqrt{x}))^{2}\le x$
+$\implies \forall x\gt1, \frac{1}{x}\le \frac{1}{(E(\sqrt{x}))^{2}}\le \frac{1}{(\sqrt{x}-1)^{2}}$
+$\implies \forall x\gt1, 1\le \frac{x}{(E(\sqrt{x}))^{2}}\le \frac{x}{x-2\sqrt{x}+1}$
+
+The limit of 1 is 1, and the limit of the other one is also 1. 
+This means the limit of our thing is also 1.
+
+### 2. Theorem of the one gendarme[^3]
+
+If there's a function f and g, both in the neighborhood of + infinity
+
+If there exists M>0 so that $\forall x>M$ we have $f(x)>g(x)$, then if the limit of g(x) is infinity, so is f(x).
+Same thing but with the opposite signs for - infinity.
+
+
+### 3. 0 makes bordered
+
+if f,g are 2 functions in the beighborhood of +infinity so that the limit of f(x) is 0, and there exists M > 0 so that g is bordered on $]M,+\infty[$
+then the limit of f(x) times g(x) is 0.
+
+Proof:
+
+$\forall x\gt M$ as g is bordered we have that $|g(x)|\le B$ for some $B\ge0$
+as $|f(x)\cdot g(x)|=|f(x)|\cdot|g(x)|\le|f(x)|B$
+
+But, as $\lim f(x)=0 \iff \lim|f(x)|=0$ so $\lim|f(x)|B=0$
+and by the two gendarmes we get $\lim |f(x)\cdot g(x)|\le0$ and thus $f(x)\cdot g(x)=0$
+
+#### Example find $\lim_{x\to+\infty} \frac{\sin(x)}{x}$
+
+As we approach infinity...
+
+$$
+\lim_{x\to\infty} \frac{\sin(x)}{x}=\lim_{x\to\infty} \frac{1}{x}=0
+$$
+
+### 4. m finite makes sign constant
+
+f, g two functions, as usual
+
+If lim f(x) is infinity and g(x) greater or equal than some number m which is greater than 0 on a neighborhood of + infinity then the limit of f(x) times g(x) is + nfinity.
+
+If lim f(x) = -infinity and g same as before, then f(x) times g(x) is - infinity.
+
+We would also gate the same result with the opposite signs if $g\le m \lt 0$.
+
+#### Example find $\lim_{x\to+\infty}2x^{2}+x^{2}sin(x)$
+
+Well, let's for now proceed as usual
+
+$\lim\limits_{x\to\infty}x^{2}(2+\sin(x))$ now we can struggle with this, or we can remember that infinity times a positive number is always infinity. Here, this is the case, as the lowest sine can go is -1, and we add 2 to it.
+
+This means the limit is + infinity.
+
+### 5. Infinity plus bordered
+
+f, g, as usual.
+
+If the limit of f(x) is infinity, and g is bordered, f(x) + g(x) is always infinity.
+Same works with - infinity.
+
+#### Example: $x-\sin(x)$
+
+Sine is majored by 1, while the limit of x is infinity.
+This means that the limit is infinity.
+
+## More more complicated examples
+
+### Example 1
+
+$$
+\begin{equation}
+\begin{split}
+\lim_{x\to-\infty} \frac{x\cdot\sin(x)}{(\cos(x)-2)(x+\sqrt{x^{4}+x^{2}})}\\=\lim_{x\to-\infty} \frac{\sin(x)}{\cos(x)-2}\cdot \frac{x}{x+\sqrt{x^{4}+x^{2}}}\\=\lim_{x\to-\infty} \frac{\sin(x)}{\cos(x)-2}\cdot \frac{x(x-\sqrt{x^{4}+x^{2}})}{x^{2}-(x^{4}+x^{2})}\\=\lim_{x\to-\infty} \frac{\sin(x)}{\cos(x)-2}\cdot \frac{1}{x^{4}}(x(x-x^{2}\sqrt{1+ \frac{1}{x^{2}}}))\\
+=\lim_{x\to-\infty} \frac{\sin(x)}{\cos(x)-2}\cdot \frac{1}{x^{4}}(x^{2}-x^{3}\sqrt{1+ \frac{1}{x^{2}}})\\=\lim_{x\to-\infty} \frac{\sin(x)}{\cos(x)-2}\cdot (\frac{-1}{x^{2}}+ \frac{1}{x}(\sqrt{1+ 1/x^{2}}))\\
+\text{ that whole second part tends to 0, the first is never infinity}\\
+\implies \lim_{x\to-\infty} \frac{\sin(x)}{\cos(x)-2}\cdot \frac{\frac{-1}{x^{2}}+ \frac{1}{x}(\sqrt{1+ 1}{x^{2}})}=0
+\end{split}
+\end{equation}
+$$
+
+
 [[1 - reminders and definitions|Previous]]
 
 
 [^1]:... that's going to be so annoying to type omfg...
 
 [^2]:Absolute Cinema
+
+[^3]:... Doesn't he get lonely?
