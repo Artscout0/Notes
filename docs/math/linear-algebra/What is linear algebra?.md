@@ -4,3 +4,5 @@ So obviously we'll spend half the first semester not doing anything vector relat
 
 - [[1. Thinking with sets|Sets]]
 - [[1. Generalities|More sets]]
+- [[1. What are Matrices|Matrices]]
+- 
