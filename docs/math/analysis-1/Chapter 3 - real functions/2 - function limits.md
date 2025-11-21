@@ -267,6 +267,7 @@ $$
 
 
 [[1 - reminders and definitions|Previous]]
+[[3 - limits at specific values of x|Next]]
 
 
 [^1]:... that's going to be so annoying to type omfg...
