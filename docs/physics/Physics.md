@@ -11,4 +11,5 @@ Table of contents:
 - [[Introduction]]
 - [[1. Matter and space|Movement in a plane]] (aka how things move)
 - [[1. Newton's first law|Dynamics]] (aka why things move)
+- [[1. Conservation of energy|Energy]] (aka why things move like they do)
 
