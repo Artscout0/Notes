@@ -120,4 +120,31 @@ In the last part of the previous section, we mentioned weird disjointed and inac
 
 Well, this requires defining 2 new things we didn't need before: left and right limits. Their name is fairly intuitive, they're limits at some value $x_0$, when approaching either from the right or the left.
 
+
+## A nice little theorem
+
+say there is $f$ defined on a neighborhood of $x_{0}$, and there is $L\in\mathbb{R}$. 
+
+$$\lim_{x\to x_{0}}f(x)=L\iff\lim_{x\to x_{0}^{-}}f(x)=\lim_{x\to x_{0}^{+}}f(x)=L$$
+
+In human readable terms, if we approach L from both right and left, that means L is the limit.
+
+It's also important to note, that the same calculations that are available for $x\to x_{0}$ are available to $x\to x_{0}^{+}$ and $x\to x_{0}^{-}$.
+
+
+## What do we do when $x_{0}$ approaches infinity
+
+Say we have $\frac{1}{x^{2}}$ and $\frac{1}{x}$ as functions. How do we define:
+- $\lim_{x\to x_{0}}=\pm\infty$
+- $\lim_{x\to x_{0}^{-}}=\pm\infty$
+- $\lim_{x\to x_{0}^{-}}=\pm\infty$
+
+Which is a total of 6 definitions, so strap in.
+
+$\lim_{x\to x_{0}^{-}}=-\infty\iff \forall B \lt 0, \exists \delta, \delta(B)\gt0, s.t. x\in ]x_{0}-\delta,x_0[\implies f(x)\lt B$
+Which means, for any number you can find, there is a value of x for which f(x) will be smaller.
+
+The logic for all the others is the same, with a bit of the previous section mixed in.
+
+
 [[2 - function limits|Previous]]
