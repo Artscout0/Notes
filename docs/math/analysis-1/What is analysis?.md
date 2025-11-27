@@ -6,4 +6,6 @@ Table of contents:
 
 - [[1 - Reminder|Elementary Algebra]]
 - [[1 - introduction|Real series]]
+- [[1 - reminders and definitions|Real functions]]
+
 

@@ -76,6 +76,6 @@ There are 2 ways to solve this: 'normally', and by factorizing and replacing thi
 
 
 [[3 - limits at specific values of x|Previous]]
-
+[[5 - continuity|Next]]
 
 [^1]:pun intended
