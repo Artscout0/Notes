@@ -174,8 +174,42 @@ The function $\tilde{f}$ is continuous, because obviously.
 We say $f$ is lengthenable at $x_{0}$ if we can build $\tilde{f}$.
 
 
+## Some additional theorems
+
+Let's say $f$ is continuous on $[a,b]$, if $f(a)\cdot f(b)\lt0$, then $\exists c\in[a,b]$ so that $f(c)$ is 0.
+
+This is very neat, as it means essentially one major thing: a continuous function can not become null unless the sign flips.
+
+This allows us to find the **intermediate value theorem**:
+
+Say we have a function $f$, continuous on $[a,b]$.
+Say we have $c\in\mathbb{R}$, in between $f(a)$ and $f(b)$ then:
+
+$f(a)\lt c\lt f(b)$ or $f(b)\lt c\lt f(a)$. 
+
+The proof is as follows:
+
+if we have $g(x)=f(x)-c$, we have g being continuous as f is continuous and c as well. 
+
+$g(a)=f(a)-c\lt0$
+$g(b)=f(b)-c\gt0$
+
+And according to the previous proposition, that means there is an $f(x)-c=0$, and therefore $f(x)=c$.
+
+If f is strictly increasing, then $f:[a,b]\to[f(a),f(b)]$ is strictly bijective, and if it's strictly decreasing, then the same thing is true.
+
+
+Lastly, we have the **min-max theorem**.
+
+It states that if we have a function $f$, continuous on $[a,b]$, then $Im f$ is an interval.
+More speifically, the image of f will be $Imf=[m,M]$, with $m, M\in\mathbb{R}$, in a way such that there exists $x_{1},x_{2}\in[a,b]$, with $m=f(x_{1}),M=f(x_{2})$. 
+
+The notation is $m=\min_{x\in[a,b]}f(x)$ and $M=\max_{x\in[a,b]}=f(x)$
+
+Welp, that's everything we need to get to the main course: **Differential calculus**
 
 [[4 - infinitely small equivalents|Previous]]
+[[1 - Derived number|Next Chapter]]
 
 [^1]:Not the pointed, just regular neighborhood. As a reminder, pointed means without the actual point, regular includes the point itself as well.
 
