@@ -8,7 +8,7 @@
 > It isn't at first obvious, and it wasn't obvious at first to the people that invented this, but it just so happens that these two questions are the same one in reality. Think of it as mountaineering, to blatantly steal an example, when the slope is positive, the input goes up. Otherwise, it's going down.
 
 
-## Mission: fund the equation of the tangent to the graph of a function f
+## Mission: find the equation of the tangent to the graph of a function f
 
 Well, let's start with geometry.
 I still haven't found a good way to draw this, I'm really procrastinating working on that, sorry.

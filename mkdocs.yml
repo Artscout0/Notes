@@ -17,6 +17,10 @@ markdown_extensions:
   - md_in_html
   - def_list
 
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+
   # callouts
   - admonition
   - pymdownx.details
