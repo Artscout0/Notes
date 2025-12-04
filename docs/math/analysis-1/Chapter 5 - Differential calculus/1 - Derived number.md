@@ -68,15 +68,12 @@ There are many ways to write things like derivatives, so instead of writing the 
 
 $\lim_{\Delta x\to0} \frac{f(x_{0}+\Delta x)-f(x)}{\Delta x}$
 
-And people get lazier:
-
-$\lim_{\Delta x\to0} \frac{f(x_{0+ \Delta}x)-f(x_{0})}{\Delta x}$
-
 And then we decided eh, let's define some stuff, and this became equivalent to:
 
 $$
 \lim_{\Delta x\to0}\frac{\Delta y}{\Delta x}\text{ or } \lim_{\Delta x\to0} \frac{\Delta f}{\Delta x}
 $$
+
 Which is where we get that notation from.
 
 ## Examples
@@ -139,7 +136,32 @@ Say a function f derivable on I, an open interval. We call the function derived 
 
 We say that $g(x)=f'(x)$ (f'(x) being the derived number).
 
-Now, old mathematicians not really giving a fuck, decided to abuse mathematical notation, and defined that $f'$ can be used as a function, even though it should be named something else.
+Now, old mathematicians not really giving a fuck, decided to abuse mathematical notation, and defined that $f'$ can be used as a function.
+
+## Part 2
+
+If we look back at $f(x)=|x|$ at $x_{0}=0$, we'll notice that it still isn't derivable.
+
+But it might inspire us to do the following:
+
+Let f a function defined to the left of $x_{0}$.
+We say f is derivable to the right of $x_{0}$ if:
+
+$\lim_{x\to x_{0}^{-}} \frac{f(x)-f(x_{0})}{x-x_{0}}$ exists. We note this limit $f'^{-}(x)$.
+
+The exact same works on the right, with - swapped to +.
+
+An example would be as mentioned before is $f(x)=|x|$, as mentioned before.
+
+$f'(0^{+})=1$
+$f'(0^{0})=-1$
+
+This also works for complicated functions that include cases and stuff.
+
+This is called the semi-tangent, as it's only tangent on one side of the point.
+
+
+Next, we have a consequence of the theorem of limits, that states f is derivable at $x_{0}$ if and only if $f'(x^{+})=f'(x^{-1})$
 
 [[5 - continuity|Previous Chapter]]
 
