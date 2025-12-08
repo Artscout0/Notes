@@ -55,7 +55,7 @@ $$
 
 ### Derivative of a quotient
 
-$$(\frac{f}{g})'(x)=\frac{f'(x)g(x)+f(x)g'(x)}{g^{2}(x)}$$
+$$(\frac{f}{g})'(x)=\frac{f'(x)g(x)-f(x)g'(x)}{g^{2}(x)}$$
 
 I'm not proving that.
 

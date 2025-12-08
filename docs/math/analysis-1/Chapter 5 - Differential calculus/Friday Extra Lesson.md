@@ -7,7 +7,7 @@ This is for the most part a recap, and an additional way to understand first two
 1. $(f+g)'(x)=f'(x)+g'(x)$
 2. $(\lambda f)'(x)=\lambda f'(x)$
 3. $(fg)'(x)=f'(x)g(x)+f(x)g'(x)$
-4. $(\frac{f}{g})'= \frac{f'(x)g(x)+f(x)g'(x)}{g^{2}(x)}$
+4. $(\frac{f}{g})'= \frac{f'(x)g(x)-f(x)g'(x)}{g^{2}(x)}$
 5. $f\circ g(x)= f'(g(x)) g'(x)$
 
 ## Derivatives of the usual functions
