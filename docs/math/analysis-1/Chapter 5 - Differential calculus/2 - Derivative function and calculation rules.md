@@ -5,7 +5,7 @@ Well, any derivative could be found using the limit and Newton's formula[^1]. Un
 
 ### Addition
 
-$f+g$ is derivable as $(f+g)'(x)=f'(x)\pm g'(x)$.
+$f+g$ is differentiable as $(f+g)'(x)=f'(x)\pm g'(x)$.
 
 The proof is findable by solving:
 
@@ -61,7 +61,7 @@ I'm not proving that.
 
 ### Derivative of a composition
 
-f needs to be derivable on x, and g needs to be derivable on f(x).
+f needs to be differentiable on x, and g needs to be differentiable on f(x).
 
 $$
 (g\circ f)(x_{0})= g'(f(x_{0}))\cdot f'(x_{0})

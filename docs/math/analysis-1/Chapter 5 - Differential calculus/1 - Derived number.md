@@ -111,7 +111,7 @@ As it's limits are different, we don't have a tangent, however we get semi-tange
 
 ## More theory
 
-If f is derivable at $x_{0}$, f is continuous at $x_{0}$.
+If f is differentiable at $x_{0}$, f is continuous at $x_{0}$.
 
 To prove this we need to show $\lim_{x\to x_{0}} f(x)=f(x_{0})$
 
@@ -123,16 +123,16 @@ $$
 
 >[!warning]
 >THE REVERSE ISN'T THE CASE!!!!
->All derivable functions are continuous, but not all continuous functions are derivable.
+>All differentiable functions are continuous, but not all continuous functions are differentiable.
 
 
 Now, let's define some more ~~random bullshit~~ important stuff:
 
 The derived function:
 
-Say there's I, an open interval, we say f is derivable on I $\iff$ f is derivable on every element of I.
+Say there's I, an open interval, we say f is differentiable on I $\iff$ f is differentiable on every element of I.
 
-Say a function f derivable on I, an open interval. We call the function derived from f, g.
+Say a function f differentiable on I, an open interval. We call the function derived from f, g.
 
 We say that $g(x)=f'(x)$ (f'(x) being the derived number).
 
@@ -140,12 +140,12 @@ Now, old mathematicians not really giving a fuck, decided to abuse mathematical 
 
 ## Part 2
 
-If we look back at $f(x)=|x|$ at $x_{0}=0$, we'll notice that it still isn't derivable.
+If we look back at $f(x)=|x|$ at $x_{0}=0$, we'll notice that it still isn't differentiable.
 
 But it might inspire us to do the following:
 
 Let f a function defined to the left of $x_{0}$.
-We say f is derivable to the right of $x_{0}$ if:
+We say f is differentiable to the right of $x_{0}$ if:
 
 $\lim_{x\to x_{0}^{-}} \frac{f(x)-f(x_{0})}{x-x_{0}}$ exists. We note this limit $f'^{-}(x)$.
 
@@ -161,7 +161,7 @@ This also works for complicated functions that include cases and stuff.
 This is called the semi-tangent, as it's only tangent on one side of the point.
 
 
-Next, we have a consequence of the theorem of limits, that states f is derivable at $x_{0}$ if and only if $f'(x^{+})=f'(x^{-1})$
+Next, we have a consequence of the theorem of limits, that states f is differentiable at $x_{0}$ if and only if $f'(x^{+})=f'(x^{-1})$
 
 [[5 - continuity|Previous Chapter]]
 
